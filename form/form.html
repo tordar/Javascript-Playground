@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form submission</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <form id="form" action="/somewhere">
+        <input type="text" placeholder="Username" name="username">
+        <input type="text" placeholder="Post tweet" name="tweet">
+        <button>Tweet</button>
+    </form>
+
+
+    <h2>Here are your tweets:</h2>
+    <ul id="tweets"></ul>
+    <hr>
+
+
+    <div>
+        <input id="input" type="text" placeholder="Write something" name="input">
+    </div>
+    <h2 id="updater">This will directly update from the form above</h2>
+    <a href="/index.html"><button id="home">Back</button></a>
+    <script src="form.js"></script>
+</body>
+
+</html>
