@@ -29,7 +29,7 @@ imgBtn.onclick = showImages
 
 
 
-function setTime() {
+window.onload = function setTime() {
     let time = new Date();
     let date = `${time.getDate()} - ${time.getMonth() + 1} - ${time.getFullYear()}`
 
