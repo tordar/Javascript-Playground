@@ -29,24 +29,7 @@ imgBtn.onclick = showImages
 
 
 
-window.onload = function setTime() {
-    let time = new Date();
-    let date = `${time.getDate()} - ${time.getMonth() + 1} - ${time.getFullYear()}`
 
-    function addZero(i) {
-        if (i < 10) {
-            i = "0" + i;
-        }
-        return i;
-    }
-
-    let exactTime = `${time.getHours()}:${addZero(time.getMinutes())}`
-    console.log(exactTime)
-
-    document.getElementById("time").innerHTML = date;
-    document.getElementById("clock").innerHTML = exactTime;
-};
-setInterval(setTime, 1000);
 
 let quoteBtn = document.querySelector('#quoteBtnn');
 quoteBtn.onclick = function () {
@@ -114,3 +97,28 @@ function getWeather() {
 }
 weatherBtn.onclick = getWeather
 
+
+function setTime() {
+    let time = new Date();
+    let date = `${time.getDate()} - ${time.getMonth() + 1} - ${time.getFullYear()}`
+
+    function addZero(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    let exactTime = `${time.getHours()}:${addZero(time.getMinutes())}`
+    console.log(exactTime)
+
+    document.getElementById("time").innerHTML = date;
+    document.getElementById("clock").innerHTML = exactTime;
+};
+
+
+window.onload = setTime()
+setInterval(() => {
+    setTime()
+}, 1000);
+// This skips the first setInterval loop so the timer immediately loads on the website
