@@ -1,7 +1,7 @@
 const baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
 
 
-for (i = 1; i < 152; i++) {
+for (i = 1; i < 899; i++) {
     const newImg = document.createElement('img');
     newImg.src = baseUrl + i + '.png'
     const container = document.querySelector("#pokemon").appendChild(newImg);
