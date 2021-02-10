@@ -45,14 +45,14 @@ const makeImages = (shows) => {
         if (result.show.image) {
             const newImg = document.createElement('img');
             newImg.src = result.show.image.medium
-            const container = document.querySelector("#container").appendChild(newImg);
+            const container = document.querySelector("#pics").appendChild(newImg);
         }
     }
 }
 
 const clear = document.querySelector("#clear")
 clear.addEventListener("click", function () {
-    const cont = document.querySelector("#container")
+    const cont = document.querySelector("#pics")
     const item = document.querySelector("img")
     while (cont.firstChild) {
         cont.removeChild(cont.lastChild)
