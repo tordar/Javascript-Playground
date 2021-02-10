@@ -50,7 +50,9 @@ const fetchBitcoinPrice = async () => {
 const addBtc = async () => {
     const newPrice = await fetchBitcoinPrice()
     let priceP = document.querySelector('#ticker')
-    priceP.innerHTML = `The current price for Bitcoin is ${newPrice}`
+    let priceX = document.querySelector('#price')
+    priceP.innerHTML = "The current price for Bitcoin is:"
+    priceX.innerHTML = `${newPrice.slice(0, 8)} USD`
 }
 addBtc()
 
