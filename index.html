@@ -7,6 +7,8 @@
     <title>Javascript playground</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -18,28 +20,48 @@
     <div id="time"></div>
     <div id="clock"></div>
     <div id="quote"></div><br>
-    <div id="container">
 
-        <button id="quoteBtnn">Get new quote</button>
-        <button id="lineRemover">Remove the line</button>
-        <button id="pictureId">Get new picture</button>
-        <button id="weatherId">Get the weather</button>
-        <a href="pokemon/poke.html"><button>Pokemon</button></a>
-        <a href="calculator/calc.html"><button>Calculator</button></a>
-        <a href="colorFlipper/color.html"><button>Color Changer</button></a>
-        <button id="mouseEnter">Mouse enter =</button>
-        <input type="text" placeholder="Type here">
-        <a href="game/game.html"><button id="game">First JS game</button></a>
-        <a href="form/form.html"><button id="form">Form submission</button></a>
-        <a href="scoreKeeper/score.html"><button id="score">Score keeper app</button></a>
-        <a href="bitcoin/bitcoin.html"><button id="btc">Bitcoin ticker</button></a>
-        <a href="search/search.html"><button id="search">TV search app</button></a>
-        <a href="explanation/howTo.html"><button id="explanation">How it was made</button></a>
-        <a href="langDetector/lang.html"><button id="detector">Language Detector</button></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md"><button id="quoteBtnn">Get new quote</button></div>
+            <div class="col-md">
+                <button id="lineRemover">Remove the line</button>
+            </div>
+            <div class="col-md"><button id="pictureId">Get new picture</button></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md"><button id="weatherId">Get the weather</button></div>
+            <div class="col-md"><a href="pokemon/poke.html"><button>Pokemon</button></a></div>
+            <div class="col-md"><a href="calculator/calc.html"><button>Calculator</button></a></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md"><a href="colorFlipper/color.html"><button>Color Changer</button></a></div>
+            <div class="col-md"><button id="mouseEnter">Mouse enter =</button></div>
+            <div class="col-md"><a href="game/game.html"><button id="game">First JS game</button></a></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md"><a href="form/form.html"><button id="form">Form submission</button></a></div>
+            <div class="col-md"><a href="scoreKeeper/score.html"><button id="score">Score keeper app</button></a></div>
+            <div class="col-md"><a href="bitcoin/bitcoin.html"><button id="btc">Bitcoin ticker</button></a></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md"><a href="search/search.html"><button id="search">TV search app</button></a></div>
+            <div class="col-md"><a href="explanation/howTo.html"><button id="explanation">How it was made</button></a>
+            </div>
+            <div class="col-md"><a href="langDetector/lang.html"><button id="detector">Language Detector</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/52d074d30/the-hague/" data-label_1="DEN HAAG"
+                data-label_2="WEATHER" data-theme="original"></a>
+        </div>
     </div>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/52d074d30/the-hague/" data-label_1="DEN HAAG"
-        data-label_2="WEATHER" data-theme="original"></a>
-    <div id="myImages" src="" width="400" height="270"></div>
+
+    <div id="myImages" src=""></div>
 
     </div>
     <script src="app.js"></script>

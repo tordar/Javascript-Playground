@@ -63,7 +63,7 @@ function mouseHoverGame() {
 }
 mouseHoverGame()
 
-let input = document.querySelector('input');
+/* let input = document.querySelector('input');
 input.addEventListener('keyup', function (evt) {
     switch (evt.code) {
         case 'ArrowUp':
@@ -82,7 +82,7 @@ input.addEventListener('keyup', function (evt) {
             console.log('Ignored')
     };
 });
-
+ */
 
 let weatherBtn = document.querySelector("#weatherId")
 function getWeather() {
@@ -122,3 +122,4 @@ setInterval(() => {
     setTime()
 }, 1000);
 // This skips the first setInterval loop so the timer immediately loads on the website
+

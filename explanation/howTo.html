@@ -4,22 +4,84 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How it's made</title>
+    <title>How it was made</title>
+    <link rel="stylesheet" href="explanation.css" />
     <link rel="stylesheet" href="https://stackedit.io/style.css" />
+
+
 </head>
 
 <body class="stackedit">
     <div class="stackedit__html">
-        <p><strong>There are four steps to the <a href="https://en.wikipedia.org/wiki/Richard_Feynman"
-                    target="blank">Feynman</a>
-                Technique:</strong></p>
+        <h2 id="richard-feynman-and-the-difference-between-knowing-the-name-of-something-and-knowing-something">Richard
+            Feynman and the difference between knowing the name of something, and knowing something</h2>
+        <p>I started working on this website in an effort to showcase all the different Javascript I’ve been learning
+            lately. However, sometimes we find ourselves just accepting what we learn because we “see that it works”,
+            and we aren’t actually able to explain what it is that we are doing. I am currently about 6 months into
+            learning programming, and as I find myself learning more and more abstract subjects, this is a trap I feel
+            is easy to fall into.</p>
+        <p>Physicist Richard Feynman was strongly critical of this phenomenon. He argued that we often talk in
+            fact-deficient, obscure generalities, in a way of hiding the fact that we don’t actually know what we’re
+            talking about. To test wether we know what we are actually talking about, or doing, Richard Feynman
+            developed a technique.</p>
+        <p><strong>There are four steps to the Feynman Technique:</strong></p>
         <ol>
             <li>Choose a concept you want to learn about.</li>
             <li>Pretend you are teaching it to a student in grade 6.</li>
             <li>Identify gaps in your explanation; Go back to the source material, to better understand it.</li>
             <li>Review and simplify (optional)</li>
         </ol>
+        <h2 id="what-is-javascript">What is JavaScript?</h2>
+        <p>JavaScript is a high-level programming language. Which means that it has a high level of abstraction, from
+            the computer hardware. You can imagine that at the very core of computing, you have programming languages
+            that are meant to communicate directly with the hardware. JavaScript, Python, and other languages are
+            written with actual easy-to-read statements. Take this example describing if a person is old enough to
+            enter.</p>
+        <pre class=" language-javascript"><code class="prism  language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>person <span class="token operator">&gt;</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Allowed to enter"</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Not old enough"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        </code></pre>
+        <p>This is relatively easy to understand, and is close to human language. A low-level language is harder to
+            learn
+            and is closer to directly communicating with the computer in binary code (essentially just ones and zeros).
+            High-level languages are more inefficient, because they don’t fully utilise the computers memory. Languages
+            like JavaScript need to be “compiled” by the computer to function, and essentially gets translated down to
+            binary code, otherwise known as “machine code”. Low-level languages on the other hand need to become
+            disassembled for us to understand them.</p>
+        <p>JavaScript in particular is useful when we want to add interactivity to websites, or create web based
+            applications, some of which I have attempted to create on this website. All the updated code for this
+            website can be found on <a href="https://github.com/tordar/Javascript-Playground">the GitHub repo</a>,
+            including the excerpts I have included here.
+        </p>
+
+        <h2 id="get-new-quote">Get new quote</h2>
+        <p>Built into the homepage, the first button on the website generates a hardcoded quote that gets included into
+            an empty div element on the main HTML file. By creating an onClick function, the div element will include
+            one of the quotes I included in the JavaScript file, as an object. The script identifies the button, and
+            when it gets clicked, it randomises a number which is the length of the quotes object, before using the
+            innerHTML method to change the website.</p>
+        <script class='code' src="https://gist.github.com/tordar/ec0bb0dfeebc35c25898cd2e868625a9.js"></script>
+
+        <h2 id="remove-the-line">Remove the line</h2>
+        <p>Incredibly easy, and pretty stupid really. querySelector method to identify the button, getElementById to
+            find the horizontal line. Simply remove it from the website, and add an alert half a second later that tells
+            you it’s removed. Finally, call the function, so it can execute when the website it run.</p>
+        <script src="https://gist.github.com/tordar/57c27e352dfd0bbf2e402de0610b98e7.js"></script>
+
+        <h2 id="get-new-picture">Get new picture</h2>
+        <p>This was an absolute nightmare to get through… It shouldn’t have been, and it was extremely discouraging at
+            times, but eventually it worked. I thought I could do something similar as with the quotes. Just make an
+            object of the image files I had included in a folder, but it was far from as easy. I eventually ended up
+            having to use JavaScript’s new Array() function, in which you can define the content of each of the elements
+            within the array. Besides that, the actual function works pretty much the same as with the quotes, with a
+            few tweaks. This could have definitely have been made more efficient and in a better way. For example, by
+            externally hosting the images, which would make the website load quicker, and probably have made for cleaner
+            code as well.</p>
+        <script src="https://gist.github.com/tordar/e5960e63ce0972936fa107b92b7f8e05.js"></script>
     </div>
+
 
 </body>
 
