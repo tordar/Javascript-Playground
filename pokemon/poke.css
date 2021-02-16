@@ -1,14 +1,26 @@
+* {box-sizing:border-box;}
+
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+  text-align: center;
+}
+#pokeInfo{
+  text-align: center;
+}
+
+img{
+  position: relative;
+
 }
 
 #pokemon{
     max-width: 100%;
     height: auto;
+    
   }
 
   img:hover{
-    position: absolute;
-    height: 200px;
-    background-color: white;
-  }
+    box-shadow: inset 0 0 0 1px #3a3a3a;
+  } 

@@ -19,11 +19,23 @@ picturesArray[5] = "img/6.JPG";
 picturesArray[6] = "img/7.JPG";
 picturesArray[7] = "img/8.JPG";
 
+var descriptions = [
+    "Joe in the snow",
+    "Easy to entertain",
+    "Ellen in the snow",
+    "Some of the 12 apostles",
+    "Some more of them",
+    "Great Ocean Road 1",
+    "Great Ocean Road 2",
+    "Great Ocean Road 3"
+]
 
 let imgBtn = document.querySelector('#pictureId');
+let desc = document.querySelector("#description");
 function showImages() {
     var number = Math.floor(Math.random() * picturesArray.length);
-    return document.getElementById("myImages").innerHTML = '<img src="' + picturesArray[number] + ' " />';
+    document.getElementById("myImages").innerHTML = '<img src="' + picturesArray[number] + ' " />';
+    desc.innerHTML = descriptions[number]
 }
 imgBtn.onclick = showImages
 
