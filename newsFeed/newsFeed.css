@@ -1,0 +1,18 @@
+#content{
+    width: 500px;
+}
+h1, a, p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    font-size: larger;
+    color: black;
+}
+img{
+    width: 500px;
+    height: auto;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+}

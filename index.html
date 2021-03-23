@@ -56,6 +56,14 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md"><a href="newsFeed/newsFeed.html"><button id="newsFeed">News feed Generator</button></a>
+            </div>
+            <div class="col-md"><a href="#"><button id="#">Empty</button></a>
+            </div>
+            <div class="col-md"><a href="#"><button id="#">Empty</button></a>
+            </div>
+        </div>
+        <div class="row">
             <a class="weatherwidget-io" href="https://forecast7.com/en/52d074d30/the-hague/" data-label_1="DEN HAAG"
                 data-label_2="WEATHER" data-theme="original"></a>
         </div>
@@ -67,6 +75,25 @@
 
     </div>
     <script src="app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA_si6cNH6gtAsghzTIphYtViaI7tNQ2RQ",
+            authDomain: "react-demo-ab575.firebaseapp.com",
+            projectId: "react-demo-ab575",
+            storageBucket: "react-demo-ab575.appspot.com",
+            messagingSenderId: "785933893410",
+            appId: "1:785933893410:web:e54b9bbd98d702692cef7b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </body>
 
 </html>

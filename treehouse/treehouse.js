@@ -43,12 +43,3 @@ fetch('https://dog.ceo/api/breeds/image/random')
         newImg.src = data.message
     })
 
-class Newclass {
-    constructor(length, height) {
-        this.length = length;
-        this.height = height;
-    }
-}
-
-const rectangle = new Newclass(10, 5)
-const square = new Newclass(10, 10)

@@ -85,3 +85,5 @@ node_modules/trim/index.js
 node_modules/trim/Makefile
 node_modules/trim/package.json
 node_modules/trim/Readme.md
+random.js
+node_modules
