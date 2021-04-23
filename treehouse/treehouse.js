@@ -18,19 +18,6 @@ xhr.onreadystatechange = function () {
     xhr.send()
 }
 
-
-// function getUserName(callback) {
-//     const name = prompt('What is your name?');
-//     callback(name);
-// }
-
-// function greeting(name) {
-//     alert('Hello, ' + name);
-// }
-
-// getUserName(greeting);
-// For getUserName to be able to run, it must first go through greeting. Like a hallpass.
-
 fetch('https://dog.ceo/api/breeds/image/random')
     .then(res => {
         console.log(res.url)
